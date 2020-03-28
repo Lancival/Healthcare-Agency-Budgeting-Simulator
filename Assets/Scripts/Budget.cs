@@ -5,12 +5,8 @@ using UnityEngine.UI;
 using TMPro;
 
 public class Budget : MonoBehaviour {
-	[SerializeField] private string n;
-
-    // Start is called before the first frame update
-    void Start() {
-    	//transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = GetBudget().ToString();
-    }
+	[SerializeField] private string n;     // Name of budget subtotal/total to retrieve
+    [SerializeField] private int r;        // Region number if applicable
 
     // Update is called once per frame
     void Update() {
@@ -20,7 +16,19 @@ public class Budget : MonoBehaviour {
     int GetBudget() {
     	if (n == "Operations")
     		return Globals.Operations();
-    	else
-    		return 0;
+        else if (n == "Research")
+            return Globals.Research();
+        else if (n == "International Health")
+            return Globals.InternationalHealth();
+        else if (n == "Miscellaneous") 
+            return Globals.Miscellaneous();
+        else if (n == "Region")
+            return Globals.Region(r);
+        else if (n == "Total")
+            return Globals.Total();
+    	else {
+    		Debug.Log("Error: Attempted to retrieve nonexistent part of budget in Budget.cs!");
+            return 0;
+        }
     }
 }
