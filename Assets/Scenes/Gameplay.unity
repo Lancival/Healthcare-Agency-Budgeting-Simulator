@@ -5755,6 +5755,7 @@ GameObject:
   - component: {fileID: 313440450}
   - component: {fileID: 313440449}
   - component: {fileID: 313440448}
+  - component: {fileID: 313440452}
   m_Layer: 0
   m_Name: Submit Button
   m_TagString: Untagged
@@ -5886,6 +5887,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 313440446}
   m_CullTransparentMesh: 0
+--- !u!114 &313440452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313440446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 285fb9ccf21ba467da490993354d800c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &333921245
 GameObject:
   m_ObjectHideFlags: 0
@@ -7430,6 +7443,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1199395952259547563, guid: a14e633b483cf431aa39bace7eae6516,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1083667479}
     - target: {fileID: 1199395952371456582, guid: a14e633b483cf431aa39bace7eae6516,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7628,6 +7646,21 @@ PrefabInstance:
     - target: {fileID: 1199395953996762010, guid: a14e633b483cf431aa39bace7eae6516,
         type: 3}
       propertyPath: m_Padding.m_Right
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199395953996762010, guid: a14e633b483cf431aa39bace7eae6516,
+        type: 3}
+      propertyPath: m_ChildAlignment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199395953996762010, guid: a14e633b483cf431aa39bace7eae6516,
+        type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199395953996762010, guid: a14e633b483cf431aa39bace7eae6516,
+        type: 3}
+      propertyPath: m_Padding.m_Bottom
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1199395953996762011, guid: a14e633b483cf431aa39bace7eae6516,
