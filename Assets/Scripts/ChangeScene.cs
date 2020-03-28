@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ChangeScene : MonoBehaviour {
-	[SerializeField] private string sceneName; // Name of the scene that the button will change to
+	[SerializeField] private string scene_name; // Name of the scene that the button will change to
 
     // Start is called before the first frame update
     void Start() {
@@ -13,6 +13,6 @@ public class ChangeScene : MonoBehaviour {
     }
 
     void Load() {
-        SceneManager.LoadScene(name); // Switch to the scene with the correct name
+        SceneManager.LoadScene(scene_name); // Switch to the scene with the correct name
     }
 }
