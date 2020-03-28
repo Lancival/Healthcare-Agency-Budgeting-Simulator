@@ -7503,7 +7503,7 @@ PrefabInstance:
     - target: {fileID: 1199395952467789296, guid: a14e633b483cf431aa39bace7eae6516,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1199395952467789296, guid: a14e633b483cf431aa39bace7eae6516,
         type: 3}
@@ -7547,6 +7547,28 @@ PrefabInstance:
 
 
         Good luck and godspeed!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199395952467789296, guid: a14e633b483cf431aa39bace7eae6516,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1199395952467789296, guid: a14e633b483cf431aa39bace7eae6516,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 3dcd34c0935234975b4ee02a9e7de17a,
+        type: 2}
+    - target: {fileID: 1199395952467789296, guid: a14e633b483cf431aa39bace7eae6516,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -8446221563224629972, guid: 3dcd34c0935234975b4ee02a9e7de17a,
+        type: 2}
+    - target: {fileID: 1199395952467789296, guid: a14e633b483cf431aa39bace7eae6516,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1199395952467789297, guid: a14e633b483cf431aa39bace7eae6516,
         type: 3}
