@@ -19934,7 +19934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73737c587937d4c8c88e434ada7a9140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: Total
+  n: Available
   r: 0
 --- !u!1 &1239660254
 GameObject:
@@ -28281,6 +28281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1771923321}
   - component: {fileID: 1771923322}
+  - component: {fileID: 1771923323}
   m_Layer: 0
   m_Name: Current Expenses
   m_TagString: Untagged
@@ -28334,6 +28335,20 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!114 &1771923323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771923320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73737c587937d4c8c88e434ada7a9140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  n: Total
+  r: 0
 --- !u!1 &1782472123
 GameObject:
   m_ObjectHideFlags: 0

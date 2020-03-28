@@ -26,6 +26,8 @@ public class Budget : MonoBehaviour {
             return Globals.Region(r);
         else if (n == "Total")
             return Globals.Total();
+        else if (n == "Available")
+            return Globals.starting_budget;
     	else {
     		Debug.Log("Error: Attempted to retrieve nonexistent part of budget in Budget.cs!");
             return 0;
