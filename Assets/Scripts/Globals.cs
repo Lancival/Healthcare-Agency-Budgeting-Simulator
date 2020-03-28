@@ -14,15 +14,15 @@ static class Globals {
 	}
 
 	public static int Research() {
-		return 0;
+		return budget["Mental Health Division"] + budget["Antibiotic Resistance Team"] + budget["Cancer Prevention and Treatment"] + budget["Gun Violence Studies"];
 	}
 
 	public static int InternationalHealth() {
-		return 0;
+		return budget["International Relations"] + budget["Foreign Aid Program"] + budget["Disease Eradication"];
 	}
 
 	public static int Miscellaneous() {
-		return 0;
+		return budget["Administrative Staff"] + budget["Cleaning and Maintenance"] + budget["Travel Expenses"] + budget["Year-End Party"];
 	}
 
 	public static int Region(int i) {
