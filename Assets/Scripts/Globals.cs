@@ -39,6 +39,8 @@ static class Globals {
 		else if (i == 4)
 			region = "Plains";
 		else return 0;
+		if (Globals.disease)
+			return budget[region + " Infrastructure"] + budget[region + " Testing"];
 		return budget[region + " Infrastructure"];
 	}
 
