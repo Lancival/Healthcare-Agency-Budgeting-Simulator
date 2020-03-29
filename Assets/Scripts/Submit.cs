@@ -20,7 +20,7 @@ public class Submit : MonoBehaviour {
 
     void SubmitBudget() {
     	Globals.quarter++;
-    	Globals.starting_budget = (int) (Globals.starting_budget * (1.0f - (float)(Globals.difficulty) / 10.0f));
+    	Globals.starting_budget = (int) (Globals.Total() * (1.0f - (float)(Globals.difficulty) / 10.0f));
     	UpdateLetter();
     }
 

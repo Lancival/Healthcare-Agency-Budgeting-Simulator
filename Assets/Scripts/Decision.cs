@@ -40,7 +40,7 @@ public class Decision : MonoBehaviour {
 
 	private void SetButtons() {
 		for (int i = 0; i < 3; i++) {
-			if (i != funding)
+			if (i != funding && i <= max_funding)
 				transform.GetChild(1).GetChild(i).GetComponent<Button>().interactable = true;
 			else
 				transform.GetChild(1).GetChild(i).GetComponent<Button>().interactable = false;

@@ -10,7 +10,7 @@ static class Globals {
 	public static int quarter = 1;													// Current quarter number
 
 	public static int Operations() {
-		return budget["Media Monitoring"] + budget["Health and Safety Inspections"] + budget["Outbreak Response Team"];
+		return budget["Media Monitoring"] + budget["Health and Safety Inspections"] + budget["Disease Response Team"] + budget["Supply Stockpile Program"];
 	}
 
 	public static int Research() {
@@ -22,7 +22,7 @@ static class Globals {
 	}
 
 	public static int Miscellaneous() {
-		return budget["Administrative Staff"] + budget["Cleaning and Maintenance"] + budget["Travel Expenses"] + budget["Year-End Party"];
+		return budget["Administrative Staff"] + budget["Cleaning and Maintenance"] + budget["Travel Expenses"] + budget["Quarterly Retreat"];
 	}
 
 	public static int Region(int i) {
@@ -31,7 +31,7 @@ static class Globals {
 
 	public static int Total() {
 		int total = 0;
-		for (int i = 0; i < 5; i++)
+		for (int i = 0; i < 4; i++)
 			total += Region(i);
 		return total + Operations() + Research() + InternationalHealth() + Miscellaneous();
 	}
