@@ -8,6 +8,7 @@ static class Globals {
 	public static int starting_budget;												// Maximum amount that can be spent this quarter
 	public static Dictionary<string,int> budget = new Dictionary<string, int>();	// Allocated budget for each item
 	public static int quarter = 1;													// Current quarter number
+	public static bool disease = false;
 
 	public static int Operations() {
 		return budget["Media Monitoring"] + budget["Health and Safety Inspections"] + budget["Disease Response Team"] + budget["Supply Stockpile Program"];
@@ -26,6 +27,8 @@ static class Globals {
 	}
 
 	public static int Region(int i) {
+		if (i == 0)
+			return Region(1) + Region(2) + Region(3) + Region(4);
 		string region = "";
 		if (i == 1)
 			region = "Lake";
@@ -33,14 +36,20 @@ static class Globals {
 			region = "Mountain";
 		else if (i == 3)
 			region = "Forest";
+		else if (i == 4)
+			region = "Plains";
 		else return 0;
 		return budget[region + " Infrastructure"];
 	}
 
+	public static int OutbreakControl() {
+		if (disease == false)
+			return 0;
+		else
+			return budget["Vaccine Research"] + budget["Supply Procurement"] + budget["Contact Tracing"] + budget["Quarantine Enforcement"];
+	}
+
 	public static int Total() {
-		int total = 0;
-		for (int i = 0; i < 4; i++)
-			total += Region(i);
-		return total + Operations() + Research() + InternationalHealth() + Miscellaneous();
+		return Region(0) + Operations() + Research() + InternationalHealth() + Miscellaneous() + OutbreakControl();
 	}
 }
