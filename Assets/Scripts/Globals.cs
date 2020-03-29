@@ -26,7 +26,15 @@ static class Globals {
 	}
 
 	public static int Region(int i) {
-		return 0;
+		string region = "";
+		if (i == 1)
+			region = "Lake";
+		else if (i == 2)
+			region = "Mountain";
+		else if (i == 3)
+			region = "Forest";
+		else return 0;
+		return budget[region + " Infrastructure"];
 	}
 
 	public static int Total() {
